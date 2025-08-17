@@ -89,8 +89,8 @@ You can exercise these rights through your account settings or by contacting our
       content: `If you have questions about this Privacy Policy or our data practices, please contact us:
 
 Email: privacy@MyTalentWin.com
-Address: 123 Privacy Street, San Francisco, CA 94105
-Phone: +1 (555) 123-4567
+Address: Indore, 452012
+Phone: +91 0000000000
 
 Our Data Protection Officer is available to address any concerns about your privacy rights.`,
     },
@@ -109,7 +109,7 @@ Our Data Protection Officer is available to address any concerns about your priv
             Your privacy is important to us. This policy explains how we collect, use, and protect your personal
             information on MyTalentWin.
           </p>
-          <div className="text-sm text-muted-foreground">Last updated: January 15, 2024</div>
+          <div className="text-sm text-muted-foreground">Last updated: August 17, 2025</div>
         </div>
 
         {/* Privacy Overview Cards */}

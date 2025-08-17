@@ -158,7 +158,7 @@ Our billing support team is here to help with any payment-related questions or i
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Transparent information about our subscription plans, billing practices, and payment security measures.
           </p>
-          <div className="text-sm text-muted-foreground">Last updated: January 15, 2024</div>
+          <div className="text-sm text-muted-foreground">Last updated: August 17, 2025</div>
         </div>
 
         {/* Payment Overview Cards */}

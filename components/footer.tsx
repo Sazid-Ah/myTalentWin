@@ -71,11 +71,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground text-sm">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 0000000000</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground text-sm">
                 <MapPin className="h-4 w-4" />
-                <span>San Francisco, CA</span>
+                <span>Indore, India</span>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@ export function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-muted-foreground text-sm">© 2024 MyTalentWin. All rights reserved.</p>
+            <p className="text-muted-foreground text-sm">© 2025 MyTalentWin. All rights reserved.</p>
             <div className="flex space-x-6">
               <Link
                 href="/privacy"

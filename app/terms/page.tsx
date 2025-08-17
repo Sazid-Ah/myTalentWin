@@ -111,7 +111,7 @@ You use the service at your own risk and agree to hold us harmless from claims a
             Please read these terms carefully before using MyTalentWin. They govern your use of our dating platform and
             services.
           </p>
-          <div className="text-sm text-muted-foreground">Last updated: January 15, 2024</div>
+          <div className="text-sm text-muted-foreground">Last updated: August 17, 2025</div>
         </div>
 
         {/* Key Points Cards */}
