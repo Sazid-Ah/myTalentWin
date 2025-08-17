@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Heart, Mail, Phone, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,8 +10,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Heart className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-foreground">MyTalentWin</span>
+            <Image src='/logo.png' height={100} width={150} alt="Logo"/>           
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Connecting hearts and building meaningful relationships in the digital age.

@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Heart, Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -22,13 +23,9 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="relative">
-              <Heart className="h-8 w-8 text-primary group-hover:animate-pulse-glow transition-all duration-300" />
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-md group-hover:bg-primary/40 transition-all duration-300"></div>
-            </div>
+          <Link href="/" className="flex items-center  group">
             <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
-              MyTalentWin
+            <Image src='/logo.png' height={100} width={150} alt="Logo"/>           
             </span>
           </Link>
 
