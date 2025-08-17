@@ -1,5 +1,6 @@
 "use client"
 
+import TestimonialSlider from "@/components/testimonial"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Users, Star, MessageCircle, Camera } from "lucide-react"
@@ -123,7 +124,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Success Stories</h2>
@@ -165,7 +166,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-16 px-6 bg-white">
   <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl mx-auto">
@@ -202,8 +203,9 @@ export default function HomePage() {
     </div>
 
   </div>
-</section>
+      </section>
 
+<TestimonialSlider/>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
