@@ -3,13 +3,14 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Users, Star, MessageCircle, Camera } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-accent/5 py-20 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-accent/5 py-20 lg:pb-32">
         <div className="absolute inset-0 bg-[url('/abstract-heart-pattern.png')] opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -61,7 +62,7 @@ export default function HomePage() {
               <div className="relative z-10 animate-float">
                 <img
                   src="/modern-dating-app-mockup.png"
-                  alt="MyTalentWinApp Interface"
+                  alt="ViraagApp Interface"
                   className="w-full max-w-md mx-auto rounded-3xl shadow-2xl"
                 />
               </div>
@@ -75,7 +76,7 @@ export default function HomePage() {
       <section className="py-20 bg-card/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Why Choose MyTalentWin?</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Why Choose Viraag?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Experience dating reimagined with cutting-edge features designed for meaningful connections.
             </p>
@@ -126,7 +127,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Success Stories</h2>
-            <p className="text-xl text-muted-foreground">Real couples who found love through MyTalentWin</p>
+            <p className="text-xl text-muted-foreground">Real couples who found love through Viraag</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -134,7 +135,7 @@ export default function HomePage() {
               {
                 name: "Sarah & Mike",
                 story:
-                  "We matched on MyTalentWinand had our first video date the same week. Six months later, we're planning our wedding!",
+                  "We matched on Viraagand had our first video date the same week. Six months later, we're planning our wedding!",
                 rating: 5,
               },
               {
@@ -166,12 +167,50 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-16 px-6 bg-white">
+  <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl mx-auto">
+    
+    {/* Image Section */}
+    <div className="flex justify-center md:justify-start">
+      <Image 
+        src="/love-stories.png" 
+        alt="love-stories" 
+        height={300} 
+        width={800} 
+        className=""
+      />
+    </div>
+    
+    {/* Text Section */}
+    <div className="space-y-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        Real love stories last forever
+      </h2>
+      <span className="block text-lg text-primary font-medium">
+        More than 10,000 stories have started on Viraag**
+      </span>
+      <span className="block text-lg text-gray-700">
+        Our favorite stories to read? Without hesitation, yours!
+      </span>
+      <p className="text-gray-600 leading-relaxed">
+        Each meeting told with your own words is unique, funny, and moving. 
+        They are proof that online dating between singles can truly turn into 
+        real stories that happen every day on Viraag.
+      </p>
+      <button className="cursor-pointer px-8 rounded-lg py-2 bg-primary text-white">Start Now</button>
+
+    </div>
+
+  </div>
+</section>
+
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           <h2 className="text-3xl lg:text-4xl font-bold">Ready to Find Your Perfect Match?</h2>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Join millions of singles who trust MyTalentWinto find meaningful relationships.
+            Join millions of singles who trust Viraag to find meaningful relationships.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

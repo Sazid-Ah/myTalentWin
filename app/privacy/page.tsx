@@ -88,7 +88,7 @@ You can exercise these rights through your account settings or by contacting our
       icon: Mail,
       content: `If you have questions about this Privacy Policy or our data practices, please contact us:
 
-Email: privacy@MyTalentWin.com
+Email: privacy@Viraag.com
 Address: Indore, 452012
 Phone: +91 0000000000
 
@@ -107,7 +107,7 @@ Our Data Protection Officer is available to address any concerns about your priv
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground">Privacy Policy</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Your privacy is important to us. This policy explains how we collect, use, and protect your personal
-            information on MyTalentWin.
+            information on Viraag.
           </p>
           <div className="text-sm text-muted-foreground">Last updated: August 17, 2025</div>
         </div>
@@ -178,8 +178,8 @@ Our Data Protection Officer is available to address any concerns about your priv
           <h2 className="text-2xl font-bold text-foreground">Questions About Privacy?</h2>
           <p className="text-muted-foreground">
             Our privacy team is here to help. Contact us at{" "}
-            <a href="mailto:privacy@MyTalentWin.com" className="text-primary hover:underline">
-              privacy@MyTalentWin.com
+            <a href="mailto:privacy@Viraag.com" className="text-primary hover:underline">
+              privacy@Viraag.com
             </a>
           </p>
         </div>

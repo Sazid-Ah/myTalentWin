@@ -11,7 +11,7 @@ export default function PaymentPolicyPage() {
       id: "subscription-plans",
       title: "Subscription Plans and Pricing",
       icon: DollarSign,
-      content: `MyTalentWinoffers several subscription options to enhance your dating experience:
+      content: `Viraagoffers several subscription options to enhance your dating experience:
 
 **Free Plan:**
 • Basic profile creation and browsing
@@ -109,7 +109,7 @@ To cancel your subscription, go to Account Settings > Subscription Management.`,
 • Chargeback protection for merchants
 
 **If You Suspect Fraud:**
-• Contact us immediately at billing@MyTalentWin.com
+• Contact us immediately at billing@Viraag.com
 • Change your account password
 • Review your payment statements
 • Report unauthorized charges to your bank
@@ -137,7 +137,7 @@ Q: What happens if my payment fails?
 A: We'll retry the payment and send you notifications to update your payment method.
 
 **Contact Billing Support:**
-• Email: billing@MyTalentWin.com
+• Email: billing@Viraag.com
 • Phone: +1 (555) 123-4567
 • Live Chat: Available 24/7 in the app
 • Response time: Within 24 hours
@@ -223,8 +223,8 @@ Our billing support team is here to help with any payment-related questions or i
           <h2 className="text-2xl font-bold text-foreground">Need Billing Help?</h2>
           <p className="text-muted-foreground">
             Our billing support team is available 24/7 at{" "}
-            <a href="mailto:billing@MyTalentWin.com" className="text-primary hover:underline">
-              billing@MyTalentWin.com
+            <a href="mailto:billing@Viraag.com" className="text-primary hover:underline">
+              billing@Viraag.com
             </a>
           </p>
         </div>

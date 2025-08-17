@@ -116,7 +116,7 @@ export default function AppInfoPage() {
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground">
                 Meet the
-                <span className="text-primary block">MyTalentWinApp</span>
+                <span className="text-primary block">ViraagApp</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Discover how our innovative dating platform uses cutting-edge technology to help you find meaningful
@@ -205,7 +205,7 @@ export default function AppInfoPage() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground">How It Works</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Four simple steps to finding your perfect match on MyTalentWin.
+              Four simple steps to finding your perfect match on Viraag.
             </p>
           </div>
 
@@ -288,7 +288,7 @@ export default function AppInfoPage() {
           <div className="space-y-4">
             <h2 className="text-3xl lg:text-4xl font-bold">Ready to Start Your Journey?</h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto">
-              Download MyTalentWintoday and join millions of singles finding meaningful relationships.
+              Download Viraagday and join millions of singles finding meaningful relationships.
             </p>
           </div>
 

@@ -11,17 +11,17 @@ export default function TermsPage() {
       id: "acceptance",
       title: "Acceptance of Terms",
       icon: FileText,
-      content: `By accessing or using MyTalentWin, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our service.
+      content: `By accessing or using Viraag, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our service.
 
-These terms constitute a legally binding agreement between you and MyTalentWin. We may update these terms from time to time, and your continued use of the service constitutes acceptance of any changes.
+These terms constitute a legally binding agreement between you and Viraag. We may update these terms from time to time, and your continued use of the service constitutes acceptance of any changes.
 
-You must be at least 18 years old to use our service. By using MyTalentWin, you represent and warrant that you meet this age requirement.`,
+You must be at least 18 years old to use our service. By using Viraag, you represent and warrant that you meet this age requirement.`,
     },
     {
       id: "user-conduct",
       title: "User Conduct and Responsibilities",
       icon: Users,
-      content: `As a user of MyTalentWin, you agree to:
+      content: `As a user of Viraag, you agree to:
 
 • Provide accurate and truthful information in your profile
 • Use the service only for its intended purpose of meeting people
@@ -53,7 +53,7 @@ Please review our Privacy Policy for detailed information about how we handle yo
       id: "prohibited-activities",
       title: "Prohibited Activities",
       icon: AlertTriangle,
-      content: `The following activities are strictly prohibited on MyTalentWin:
+      content: `The following activities are strictly prohibited on Viraag:
 
 • Creating fake or misleading profiles
 • Harassment, bullying, or threatening behavior
@@ -70,9 +70,9 @@ Engaging in prohibited activities may result in immediate account termination an
       id: "intellectual-property",
       title: "Intellectual Property Rights",
       icon: Scale,
-      content: `MyTalentWinand its content are protected by intellectual property laws:
+      content: `Viraagand its content are protected by intellectual property laws:
 
-• The MyTalentWinapp, website, and all related content are owned by us
+• The Viraagapp, website, and all related content are owned by us
 • You retain ownership of content you upload (photos, messages, etc.)
 • By uploading content, you grant us a license to use it for service operation
 • You may not copy, modify, or distribute our proprietary content
@@ -85,7 +85,7 @@ We respect intellectual property rights and expect our users to do the same.`,
       id: "limitation-liability",
       title: "Limitation of Liability",
       icon: Gavel,
-      content: `MyTalentWinprovides the platform "as is" and makes no warranties:
+      content: `Viraagprovides the platform "as is" and makes no warranties:
 
 • We do not guarantee that you will find a match or relationship
 • We are not responsible for the actions of other users
@@ -108,7 +108,7 @@ You use the service at your own risk and agree to hold us harmless from claims a
           </Badge>
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground">Terms & Conditions</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Please read these terms carefully before using MyTalentWin. They govern your use of our dating platform and
+            Please read these terms carefully before using Viraag. They govern your use of our dating platform and
             services.
           </p>
           <div className="text-sm text-muted-foreground">Last updated: August 17, 2025</div>
@@ -180,8 +180,8 @@ You use the service at your own risk and agree to hold us harmless from claims a
           <h2 className="text-2xl font-bold text-foreground">Questions About Our Terms?</h2>
           <p className="text-muted-foreground">
             Contact our legal team at{" "}
-            <a href="mailto:legal@MyTalentWin.com" className="text-primary hover:underline">
-              legal@MyTalentWin.com
+            <a href="mailto:legal@Viraag.com" className="text-primary hover:underline">
+              legal@Viraag.com
             </a>
           </p>
         </div>

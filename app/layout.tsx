@@ -7,7 +7,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "MyTalentWin - Modern Dating Platform",
+  title: "Viraag - Modern Dating Platform",
   description: "Connect with meaningful relationships in a safe and modern dating environment",
   generator: "v0.app",
 }

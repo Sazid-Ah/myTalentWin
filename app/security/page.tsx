@@ -116,7 +116,7 @@ export default function SecurityPage() {
       name: "Sarah M.",
       role: "Verified User",
       content:
-        "The photo verification gave me confidence that I was talking to real people. I felt much safer using MyTalentWincompared to other apps.",
+        "The photo verification gave me confidence that I was talking to real people. I felt much safer using Viraagcompared to other apps.",
       rating: 5,
     },
     {
