@@ -13,7 +13,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-accent/5 py-20 lg:pb-32">
-        <div className="absolute inset-0 bg-[url('/abstract-heart-pattern.png')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/abstract-heart-pattern.png')] bg-no-repeat bg-cover opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-slide-in-up">
@@ -31,17 +31,17 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse-glow"
+                  className="bg-primary cursor-pointer hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse-glow"
                 >
                   Start Dating Now
                 </Button>
-                <Button
+               <Link href='/app-info'> <Button
                   variant="outline"
                   size="lg"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 bg-transparent"
+                  className="border-primary cursor-pointer text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 bg-transparent"
                 >
                   Learn More
-                </Button>
+                </Button></Link>
               </div>
 
               <div className="flex items-center space-x-8 pt-4">
@@ -74,7 +74,7 @@ export default function HomePage() {
         </div>
       </section>
 
-<BannerSlider />
+{/* <BannerSlider /> */}
 
       {/* Features Section */}
       <section className="py-20 bg-card/50">
@@ -223,7 +223,7 @@ export default function HomePage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-primary tracking-tight drop-shadow-md">
-            Find Love with Viraag: Your Journey Starts Here
+          Find Love with Viraag: Start with Video Tutorials
           </h2>
           <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
             Get started with the Viraag Dating & Matrimony App and unlock a world of meaningful connections. Follow our simple guide to spark your love story!
@@ -281,9 +281,9 @@ export default function HomePage() {
         <div className="text-center mt-12">
           <a
             href="#download"
-            className="inline-block bg-rose-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-rose-700 hover:scale-105 transition-all duration-300 shadow-md"
+            className="inline-block bg-[#ab110f] text-white font-semibold px-8 py-4 rounded-full hover:bg-rose-700 hover:scale-105 transition-all duration-300 shadow-md"
           >
-            Download Viraag Now
+            Download App Now
           </a>
         </div>
       </div>
@@ -304,13 +304,14 @@ export default function HomePage() {
             >
               Download App
             </Button>
-            <Button
+          <Link href='\app-info'>
+          <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 bg-transparent"
             >
               <Link href="/app-info">Learn More</Link>
-            </Button>
+            </Button></Link>
           </div>
         </div>
       </section>

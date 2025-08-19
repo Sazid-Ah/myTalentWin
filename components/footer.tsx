@@ -86,10 +86,10 @@ export function Footer() {
             <p className="text-muted-foreground text-sm">© 2025 Viraag. All rights reserved.</p>
             <div className="flex space-x-6">
               <Link
-                href="/privacy"
+                href="/cookie-policy"
                 className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm"
               >
-                Privacy
+                Cookie-policy
               </Link>
               <Link
                 href="/terms"

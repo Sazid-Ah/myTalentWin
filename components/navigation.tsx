@@ -42,7 +42,7 @@ export function Navigation() {
               </Link>
             ))} */}
           <Button className="relative cursor-pointer overflow-hidden rounded-full px-8 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-  <span className="absolute inset-0 bg-gradient-to-r from-[#cc3a4c] via-[#e94b5f] to-[#cc3a4c] opacity-90 transition-opacity duration-300 group-hover:opacity-100"></span>
+  <span className="absolute inset-0 bg-gradient-to-r from-[#ab110f] via-[#e94b5f] to-[#ab110f] opacity-90 transition-opacity duration-300 group-hover:opacity-100"></span>
   <span className="absolute inset-0 bg-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
   <span className="relative z-10">✨ Get Started</span>
 </Button>

@@ -12,19 +12,19 @@
   --card-foreground: oklch(0.25 0 0); /* Darker text on cards */
   --popover: oklch(1 0 0); /* White popover */
   --popover-foreground: oklch(0.35 0 0); /* Dark text in popovers */
-  --primary: oklch(0.5698 0.1818 18.41); /* Emerald primary color */
+  --primary: oklch(0.4719 0.1845 28.54); /* Emerald primary color */
   --primary-foreground: oklch(1 0 0); /* White text on primary */
   --secondary: oklch(0.98 0 0); /* Light gray secondary */
   --secondary-foreground: oklch(0.25 0 0); /* Dark text on secondary */
   --muted: oklch(0.96 0 0); /* Muted background */
   --muted-foreground: oklch(0.5 0 0); /* Muted text */
-  --accent: oklch(0.5698 0.1818 18.41) /* Bright emerald accent */
+  --accent: oklch(0.4719 0.1845 28.54) /* Bright emerald accent */
   --accent-foreground: oklch(1 0 0); /* White text on accent */
   --destructive: oklch(0.55 0.25 25); /* Red for warnings */
   --destructive-foreground: oklch(1 0 0); /* White text on destructive */
   --border: oklch(0.92 0 0); /* Light border */
   --input: oklch(1 0 0); /* White input fields */
-  --ring: oklch(0.5698 0.1818 18.41); /* Emerald focus ring */
+  --ring: oklch(0.4719 0.1845 28.54); /* Emerald focus ring */
   --chart-1: oklch(0.45 0.15 160); /* Emerald chart color */
   --chart-2: oklch(0.55 0.15 160); /* Bright emerald */
   --chart-3: oklch(0.65 0.25 330); /* Pink accent */
@@ -38,7 +38,7 @@
   --sidebar-accent: oklch(0.55 0.15 160); /* Bright emerald accent */
   --sidebar-accent-foreground: oklch(1 0 0); /* White text */
   --sidebar-border: oklch(0.92 0 0); /* Light border */
-  --sidebar-ring: oklch(0.5698 0.1818 18.41); /* Emerald focus ring */
+  --sidebar-ring: oklch(0.4719 0.1845 28.54); /* Emerald focus ring */
 }
 
 .dark {
