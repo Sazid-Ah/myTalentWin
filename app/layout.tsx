@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Viraag - Modern Dating Platform",
   description: "Connect with meaningful relationships in a safe and modern dating environment",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.jpg",
+  },
 }
 
 export default function RootLayout({

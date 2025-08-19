@@ -3,40 +3,55 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
-import { Shield, Eye, Lock, Database, Users, Mail } from "lucide-react"
+import { Shield, Eye, Lock, Database, Users, Mail, Airplay, Milestone, Columns } from "lucide-react"
 
 export default function PrivacyPolicyPage() {
   const privacySections = [
     {
+      id: "introduction",
+      title: "Introduction",
+      icon: Airplay,
+      content: `• Viraag ("we," "us," or "our") is committed to protecting your privacy. This
+    Privacy Policy outlines how we collect, use, and safeguard your personal data
+    when you use our mobile app and website. Viraag offers dating services,
+    subscription plans, This Privacy Policy applies to websites, apps, events and other
+    services we operate under the viraag brand By using our services, you agree to this
+    policy`
+    },    
+    {
       id: "information-collection",
       title: "Information We Collect",
       icon: Database,
-      content: `We collect information you provide directly to us, such as when you create an account, update your profile, or communicate with other users. This includes:
-
-• Personal information (name, email, phone number, date of birth)
-• Profile information (photos, bio, interests, preferences)
-• Location data (with your permission)
-• Communication data (messages, video calls)
-• Usage data (app interactions, features used)
-
-We also collect information automatically through your use of our services, including device information, log data, and cookies.`,
-    },
+      content: `We collect the following types of information to provide and improve our services:
+    
+    • Personal Information: When you register or subscribe, we collect your name, email address, phone number, gender, live location, payment details, and profile information (e.g., interests, preferences). We may also collect data from third-party platforms (e.g., Facebook, Google, or Apple) when you sign in through them.  
+    
+    • Subscription Information: Data related to your subscription status, including start/end dates, and the services available to you (e.g., posting photos, chat, call, video call features).  
+    
+    • Usage Data: Information on how you interact with the app, such as profiles viewed, chats initiated, and features used.  
+    
+    • Location Data: With your consent, we collect location information to enhance your dating experience by matching you with nearby users.  
+    
+    • Device Information: Includes IP address, device type, and operating system details to improve performance and ensure security.  
+    
+    • Marketing, Survey, and Research Data: Information collected from your participation in surveys, feedback, or promotional activities to help us improve and personalize our services.`
+    },    
     {
       id: "information-use",
       title: "How We Use Your Information",
       icon: Users,
       content: `We use the information we collect to:
 
-• Provide and maintain our dating services
-• Match you with compatible users based on preferences
-• Facilitate communication between users
-• Improve our algorithms and user experience
-• Send you notifications and updates
-• Ensure safety and security on our platform
-• Comply with legal obligations
-• Prevent fraud and abuse
+• Dating and Matchmaking: We use your profile information and
+preferences to help you find the best matches. Subscription-based
+features such as chatting, calling, and video calls are unlocked for users
+who subscribe to premium plans.
 
-We never sell your personal information to third parties for marketing purposes.`,
+• Communication: We may use your email or phone number to communicate
+about your account, subscription, or contest participation.
+
+• Security and Improvement: We use data to enhance security, prevent fraud,
+and improve the overall experience on Viraag.`,
     },
     {
       id: "information-sharing",
@@ -44,13 +59,12 @@ We never sell your personal information to third parties for marketing purposes.
       icon: Eye,
       content: `We may share your information in the following circumstances:
 
-• With other users as part of the dating service (profile information)
-• With service providers who help us operate our platform
-• For legal compliance or to protect rights and safety
-• In connection with a business transaction (merger, acquisition)
-• With your explicit consent
+• Third-Party Service Providers: We share your data with payment
+processors, customer support services, and other necessary vendors
 
-We implement strict controls to ensure your information is only shared when necessary and appropriate.`,
+•  Legal Compliance: If required by law, we may disclose your
+information to comply with legal obligations or to protect our rights
+and safety.`,
     },
     {
       id: "data-security",
@@ -58,29 +72,37 @@ We implement strict controls to ensure your information is only shared when nece
       icon: Lock,
       content: `We take data security seriously and implement various measures to protect your information:
 
-• Encryption of data in transit and at rest
-• Regular security audits and assessments
-• Access controls and authentication systems
-• Secure data centers and infrastructure
-• Employee training on data protection
-• Incident response procedures
-
-While we strive to protect your information, no method of transmission over the internet is 100% secure.`,
+• We implement industry-standard security measures, including
+encryption, to protect your personal information. However, no system
+is completely secure, and we cannot guarantee the full security of your
+data.`,
+    },
+    {
+      id: "subscriptions-and-payments",
+      title: "Subscriptions and Payments",
+      icon: Shield,
+      content: `• Subscription payments are processed through secure payment
+gateways. Once a subscription fee is paid, it is non-refundable.
+Subscription unlocks advanced features, such as profile visibility, chat,
+call, and video call functionalities`,
     },
     {
       id: "user-rights",
-      title: "Your Rights and Choices",
-      icon: Shield,
-      content: `You have several rights regarding your personal information:
+      title: "Your Rights",
+      icon: Milestone,
+      content: `• Access and Update: You can access or update your personal information
+      at any time in the app or website settings
 
-• Access: Request a copy of your personal data
-• Correction: Update or correct inaccurate information
-• Deletion: Request deletion of your account and data
-• Portability: Receive your data in a portable format
-• Objection: Object to certain processing activities
-• Restriction: Request limitation of processing
-
-You can exercise these rights through your account settings or by contacting our support team.`,
+      • Delete Account: You may request the deletion of your account and data.
+      Some information may be retained for legal reasons
+      `,
+    },
+    {
+      id: "changes-to-this-policy",
+      title: "Changes to This Policy",
+      icon: Columns,
+      content: `• We reserve the right to modify this Privacy Policy as needed. Any
+      updates will be posted on our app and website.`,
     },
     {
       id: "contact-info",
@@ -88,11 +110,8 @@ You can exercise these rights through your account settings or by contacting our
       icon: Mail,
       content: `If you have questions about this Privacy Policy or our data practices, please contact us:
 
-Email: privacy@Viraag.com
-Address: Indore, 452012
-Phone: +91 0000000000
-
-Our Data Protection Officer is available to address any concerns about your privacy rights.`,
+      If you have any questions or concerns about our Privacy Policy, please
+      contact us at Email : support@viraag.com`,
     },
   ]
 
@@ -178,8 +197,8 @@ Our Data Protection Officer is available to address any concerns about your priv
           <h2 className="text-2xl font-bold text-foreground">Questions About Privacy?</h2>
           <p className="text-muted-foreground">
             Our privacy team is here to help. Contact us at{" "}
-            <a href="mailto:privacy@Viraag.com" className="text-primary hover:underline">
-              privacy@Viraag.com
+            <a href="mailto:support@viraag.com" className="text-primary hover:underline">
+            support@viraag.com
             </a>
           </p>
         </div>

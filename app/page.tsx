@@ -1,5 +1,6 @@
 "use client"
 
+import BannerSlider from "@/components/BannerSlider"
 import TestimonialSlider from "@/components/testimonial"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -72,6 +73,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+<BannerSlider />
 
       {/* Features Section */}
       <section className="py-20 bg-card/50">
