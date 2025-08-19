@@ -8,142 +8,38 @@ import { CreditCard, Shield, RefreshCw, HelpCircle, DollarSign, Calendar } from 
 export default function PaymentPolicyPage() {
   const paymentSections = [
     {
-      id: "subscription-plans",
-      title: "Subscription Plans and Pricing",
-      icon: DollarSign,
-      content: `Viraagoffers several subscription options to enhance your dating experience:
-
-**Free Plan:**
-• Basic profile creation and browsing
-• Limited daily likes and matches
-• Basic messaging features
-
-**Premium Plan ($19.99/month):**
-• Unlimited likes and super likes
-• See who liked your profile
-• Advanced filters and preferences
-• Priority customer support
-
-**Premium Plus ($29.99/month):**
-• All Premium features
-• Boost your profile visibility
-• Read receipts for messages
-• Video calling features
-• Incognito mode
-
-All prices are in USD and may vary by region. Subscription fees are charged monthly unless you choose an annual plan.`,
-    },
-    {
       id: "payment-methods",
-      title: "Accepted Payment Methods",
-      icon: CreditCard,
-      content: `We accept the following payment methods for your convenience:
+      title: "Payment Methods",
+      icon: DollarSign,
+      content: `Multiple Payment Options:Viraag supports various:
 
-• Credit Cards (Visa, Mastercard, American Express, Discover)
-• Debit Cards with Visa or Mastercard logos
+**payment methods:**
+• credit/debit cards
+• UPI
+
+**payment gateways:**
+• Razorpay
 • PayPal
-• Apple Pay (iOS devices)
-• Google Pay (Android devices)
-• Bank transfers (select regions)
-
-All payments are processed securely through our certified payment partners. We do not store your complete payment information on our servers.
-
-Payment information is encrypted and processed in compliance with PCI DSS standards.`,
+• PhonePe`,
     },
     {
-      id: "billing-renewal",
-      title: "Billing and Auto-Renewal",
+      id: "subscription-services",
+      title: "Subscription Services",
+      icon: CreditCard,
+      content: `Viraag offers subscription-based services for features such as profile matching, chatting, voice and video calls. After subscribing, users gain access to exclusive features such as chatting with potential matches and participating in contests`,
+    },
+    {
+      id: "security-of-payments",
+      title: "Security of Payments",
       icon: Calendar,
-      content: `Important information about billing and renewals:
-
-• Subscriptions automatically renew at the end of each billing period
-• You will be charged the current subscription rate at renewal
-• Renewal charges occur 24 hours before the subscription expires
-• You can cancel auto-renewal at any time in your account settings
-• Cancellation takes effect at the end of the current billing period
-• No partial refunds for unused portions of subscription periods
-
-You will receive email notifications before each renewal charge. Make sure to keep your payment information up to date to avoid service interruption.`,
+      content: `All payment information is handled securely using industry-standard encryption technologies. Viraag ensures that transactions are processed safely to protect user data from unauthorized access.`,
     },
     {
-      id: "refund-policy",
-      title: "Refund and Cancellation Policy",
+      id: "Refunds",
+      title: "Refunds",
       icon: RefreshCw,
-      content: `Our refund policy is designed to be fair and transparent:
-
-**Refund Eligibility:**
-• Technical issues preventing service use
-• Unauthorized charges (report within 30 days)
-• Accidental purchases (request within 48 hours)
-
-**Non-Refundable Situations:**
-• Change of mind after using premium features
-• Inability to find matches (dating success not guaranteed)
-• Violation of terms leading to account suspension
-
-**Refund Process:**
-• Contact support with your refund request
-• Provide order details and reason for refund
-• Refunds processed within 5-10 business days
-• Refunds issued to original payment method
-
-To cancel your subscription, go to Account Settings > Subscription Management.`,
-    },
-    {
-      id: "security-fraud",
-      title: "Payment Security and Fraud Protection",
-      icon: Shield,
-      content: `We take payment security seriously and implement multiple protection measures:
-
-**Security Measures:**
-• SSL encryption for all payment transactions
-• PCI DSS compliant payment processing
-• Fraud detection and monitoring systems
-• Secure tokenization of payment data
-• Regular security audits and updates
-
-**Fraud Protection:**
-• Real-time transaction monitoring
-• Suspicious activity alerts
-• Account verification requirements
-• Chargeback protection for merchants
-
-**If You Suspect Fraud:**
-• Contact us immediately at billing@Viraag.com
-• Change your account password
-• Review your payment statements
-• Report unauthorized charges to your bank
-
-We will investigate all fraud reports promptly and take appropriate action.`,
-    },
-    {
-      id: "billing-support",
-      title: "Billing Support and FAQ",
-      icon: HelpCircle,
-      content: `Common billing questions and how to get help:
-
-**Frequently Asked Questions:**
-
-Q: Why was I charged after canceling?
-A: Cancellations take effect at the end of the current billing period.
-
-Q: Can I get a refund if I don't find matches?
-A: We cannot guarantee dating success, so this is not grounds for a refund.
-
-Q: How do I update my payment information?
-A: Go to Account Settings > Payment Methods to update your details.
-
-Q: What happens if my payment fails?
-A: We'll retry the payment and send you notifications to update your payment method.
-
-**Contact Billing Support:**
-• Email: billing@Viraag.com
-• Phone: +1 (555) 123-4567
-• Live Chat: Available 24/7 in the app
-• Response time: Within 24 hours
-
-Our billing support team is here to help with any payment-related questions or issues.`,
-    },
+      content: `No Refunds:Fees paid for joining contests, participating in matchmaking services, or any other feature are non-refundable. Users are encouraged to read the terms before making payments.`,
+    }
   ]
 
   return (
