@@ -20,17 +20,18 @@ import {
 
 export default function AppInfoPage() {
   const features = [
-    {
-      icon: Shield,
-      title: "Advanced Security",
-      description: "Photo verification, background checks, and secure messaging to keep you safe.",
-      color: "text-green-500",
-    },
+ 
     {
       icon: Users,
-      title: "Smart Matching",
-      description: "AI-powered algorithm analyzes compatibility based on interests, values, and lifestyle.",
+      title: "Profile Matching",
+      description: "Our intelligent algorithms help match users based on compatibility, making it easier to find people who align with your preferences and lifestyle.",
       color: "text-blue-500",
+    },
+    {
+      icon: Lock,
+      title: "Subscription Services",
+      description: "Viraag offers premium features for users who want to enhance their dating experience. Premium members can unlock more detailed profiles, priority match suggestions, and additional communication tools.",
+      color: "text-gray-500",
     },
     {
       icon: MessageCircle,
@@ -63,11 +64,12 @@ export default function AppInfoPage() {
       color: "text-indigo-500",
     },
     {
-      icon: Lock,
-      title: "Privacy Controls",
-      description: "Complete control over who sees your profile and personal information.",
-      color: "text-gray-500",
+      icon: Shield,
+      title: "Advanced Security",
+      description: "Photo verification, background checks, and secure messaging to keep you safe.",
+      color: "text-green-500",
     },
+   
   ]
 
   const howItWorks = [
@@ -98,10 +100,10 @@ export default function AppInfoPage() {
   ]
 
   const stats = [
-    { number: "2M+", label: "Active Users" },
-    { number: "500K+", label: "Successful Matches" },
+    { number: "500k+", label: "Active Users" },
+    { number: "100K+", label: "Successful Matches" },
     { number: "4.9", label: "App Store Rating" },
-    { number: "150+", label: "Countries" },
+    { number: "15+", label: "Countries" },
   ]
 
   return (
@@ -119,8 +121,7 @@ export default function AppInfoPage() {
                 <span className="text-primary block">ViraagApp</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Discover how our innovative dating platform uses cutting-edge technology to help you find meaningful
-                connections and lasting relationships.
+              Viraag is a dedicated platform designed to help users find love and create lasting relationships through meaningful matchmaking. The app provides a range of features that enable users to connect, communicate, and build relationships based on shared values and interests.
               </p>
             </div>
 
