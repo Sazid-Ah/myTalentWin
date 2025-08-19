@@ -9,14 +9,14 @@ import Image from "next/image"
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/app-info", label: "App Info" },
-    { href: "/privacy", label: "Privacy" },
-    { href: "/terms", label: "Terms" },
-    { href: "/payment", label: "Payment" },
-    { href: "/security", label: "Security" },
-  ]
+  // const navItems = [
+  //   { href: "/", label: "Home" },
+  //   { href: "/app-info", label: "App Info" },
+  //   { href: "/privacy", label: "Privacy" },
+  //   { href: "/terms", label: "Terms" },
+  //   { href: "/payment", label: "Payment" },
+  //   { href: "/security", label: "Security" },
+  // ]
 
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
@@ -30,8 +30,8 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+          <div className="flex items-center space-x-8">
+            {/* {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -40,14 +40,17 @@ export function Navigation() {
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </Link>
-            ))}
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg">
-              Get Started
-            </Button>
+            ))} */}
+          <Button className="relative cursor-pointer overflow-hidden rounded-full px-8 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+  <span className="absolute inset-0 bg-gradient-to-r from-[#cc3a4c] via-[#e94b5f] to-[#cc3a4c] opacity-90 transition-opacity duration-300 group-hover:opacity-100"></span>
+  <span className="absolute inset-0 bg-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+  <span className="relative z-10">✨ Get Started</span>
+</Button>
+
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* <div className="">
             <Button
               variant="ghost"
               size="icon"
@@ -56,14 +59,14 @@ export function Navigation() {
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
-          </div>
+          </div> */}
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden animate-slide-in-up">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-card rounded-lg mt-2 border border-border shadow-lg">
-              {navItems.map((item) => (
+              {/* {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -72,7 +75,7 @@ export function Navigation() {
                 >
                   {item.label}
                 </Link>
-              ))}
+              ))} */}
               <div className="px-3 py-2">
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-2 rounded-full transition-all duration-300">
                   Get Started

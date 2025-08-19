@@ -207,6 +207,85 @@ export default function HomePage() {
 
 <TestimonialSlider/>
 
+<section className="relative py-24 overflow-hidden bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
+      {/* Decorative Heart Elements */}
+      <div className="absolute top-10 left-10 w-20 h-20 opacity-30 animate-pulse">
+        <Image src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f43f5e'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E" alt="heart" width={80} height={80} />
+      </div>
+      <div className="absolute bottom-10 right-10 w-16 h-16 opacity-30 animate-pulse delay-500">
+        <Image src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a78bfa'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E" alt="heart" width={64} height={64} />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-2xl md:text-4xl font-bold text-primary tracking-tight drop-shadow-md">
+            Find Love with Viraag: Your Journey Starts Here
+          </h2>
+          <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+            Get started with the Viraag Dating & Matrimony App and unlock a world of meaningful connections. Follow our simple guide to spark your love story!
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Content Section (Steps) */}
+          <div className="space-y-8">
+            <div className="relative bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-rose-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold">1</span>
+              </div>
+              <h3 className="text-2xl font-semibold text-rose-600 mb-4">Craft Your Perfect Profile</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Sign up in seconds with your email or phone. Add vibrant photos and share your passions to attract the right match.
+              </p>
+            </div>
+            <div className="relative bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold">2</span>
+              </div>
+              <h3 className="text-2xl font-semibold text-purple-600 mb-4">Discover Your Match</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Explore profiles with our smart filters. Swipe, like, and start chatting with potential partners who share your vibe.
+              </p>
+            </div>
+            <div className="relative bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold">3</span>
+              </div>
+              <h3 className="text-2xl font-semibold text-pink-600 mb-4">Connect & Fall in Love</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Chat securely, plan romantic dates, and build lasting connections with our trusted platform.
+              </p>
+            </div>
+          </div>
+
+          {/* Video Embed Section */}
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl lg:sticky lg:top-20">
+            <div className="absolute inset-0 border-4 border-dashed border-rose-300/50 z-10"></div>
+            <iframe
+              className="w-full h-64 md:h-80 lg:h-[500px]"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with actual Viraag guide video URL
+              title="Viraag App Guide Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-rose-500/20 to-transparent"></div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <a
+            href="#download"
+            className="inline-block bg-rose-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-rose-700 hover:scale-105 transition-all duration-300 shadow-md"
+          >
+            Download Viraag Now
+          </a>
+        </div>
+      </div>
+    </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
