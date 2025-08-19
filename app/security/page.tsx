@@ -18,43 +18,55 @@ import {
   UserCheck,
   FileText,
   Clock,
+  Globe
 } from "lucide-react"
+import TestimonialSlider from "@/components/testimonial"
 
 export default function SecurityPage() {
   const [activeFeature, setActiveFeature] = useState(0)
 
   const securityFeatures = [
     {
-      icon: Camera,
-      title: "Photo Verification",
-      description: "AI-powered photo verification ensures profiles are authentic and reduces fake accounts.",
+      icon: Globe,
+      title: "Data Encryption",
+      description: "All sensitive data, including personal details and payment information, is encrypted using SSL (Secure Socket Layer) technology to prevent unauthorized access during transmission",
       details:
-        "Our advanced AI technology analyzes profile photos to detect fake or manipulated images, ensuring you're connecting with real people.",
-      status: "Active",
+        "All sensitive data, including personal details and payment information, is encrypted using SSL (Secure Socket Layer) technology to prevent unauthorized access during transmission",
     },
     {
       icon: Lock,
-      title: "End-to-End Encryption",
-      description: "All messages and calls are encrypted to protect your private conversations.",
+      title: "Secure Authentication",
+      description: "We implement secure login methods, including two-factor authentication (2FA), to ensure that only authorized users can access their accounts.",
       details:
-        "We use military-grade encryption to secure all communications, ensuring only you and your match can read your messages.",
-      status: "Active",
+        "We implement secure login methods, including two-factor authentication (2FA), to ensure that only authorized users can access their accounts.",
     },
     {
       icon: UserCheck,
-      title: "Identity Verification",
-      description: "Optional identity verification adds an extra layer of trust to your profile.",
+      title: "Compliance with Regulations",
+      description: "Viraag complies with global data protection regulations such as the GDPR (General Data Protection Regulation) to ensure the privacy and safety of user data.",
       details:
-        "Verify your identity with government-issued ID to earn a verification badge and increase trust with potential matches.",
-      status: "Optional",
+        "Viraag complies with global data protection regulations such as the GDPR (General Data Protection Regulation) to ensure the privacy and safety of user data.",
     },
     {
       icon: Eye,
-      title: "Profile Screening",
-      description: "All profiles are reviewed by our safety team before going live.",
+      title: "Regular Security Audits",
+      description: "Our systems undergo regular security checks and audits to identify and fix vulnerabilities, ensuring that our platform is up-to-date with the latest security measures.",
       details:
-        "Our human moderators review every profile to ensure compliance with community guidelines and safety standards.",
-      status: "Automatic",
+        "Our systems undergo regular security checks and audits to identify and fix vulnerabilities, ensuring that our platform is up-to-date with the latest security measures.",
+    },
+    {
+      icon: Globe,
+      title: "Data Encryption",
+      description: "We anonymize sensitive user information to further protect it from misuse, especially when processing data for internal analysis or improving the user experience.",
+      details:
+        "We anonymize sensitive user information to further protect it from misuse, especially when processing data for internal analysis or improving the user experience.",
+    },
+    {
+      icon: Eye,
+      title: "User Control",
+      description: "Customers have full control over their personal data, including the ability to update, delete, or request a copy of their information stored on the platform.",
+      details:
+        "Customers have full control over their personal data, including the ability to update, delete, or request a copy of their information stored on the platform.",
     },
   ]
 
@@ -150,8 +162,7 @@ export default function SecurityPage() {
                 <span className="text-primary block">Our Priority</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Advanced security measures, verification systems, and safety tools designed to protect you while you
-                find meaningful connections.
+              At Viraag, we take the security and privacy of our users' data very seriously. Our platform is built with advanced security protocols to ensure that all personal information, communication, and financial transactions remain confidential and protected. Here’s how we safeguard our customers’ data
               </p>
             </div>
 
@@ -201,9 +212,9 @@ export default function SecurityPage() {
                       <div className="flex-1 space-y-2">
                         <div className="flex items-center justify-between">
                           <h3 className="text-lg font-semibold text-foreground">{feature.title}</h3>
-                          <Badge variant={feature.status === "Active" ? "default" : "secondary"} className="text-xs">
+                          {/* <Badge variant={feature.status === "Active" ? "default" : "secondary"} className="text-xs">
                             {feature.status}
-                          </Badge>
+                          </Badge> */}
                         </div>
                         <p className="text-muted-foreground">{feature.description}</p>
                       </div>
@@ -228,7 +239,7 @@ export default function SecurityPage() {
                   <p className="text-muted-foreground leading-relaxed">{securityFeatures[activeFeature].details}</p>
                   <div className="flex items-center space-x-2 text-sm text-primary">
                     <CheckCircle className="h-4 w-4" />
-                    <span>Status: {securityFeatures[activeFeature].status}</span>
+                    {/* <span>Status: {securityFeatures[activeFeature].status}</span> */}
                   </div>
                 </CardContent>
               </Card>
@@ -268,81 +279,9 @@ export default function SecurityPage() {
         </div>
       </section>
 
-      {/* Safety Tips Section */}
-      <section className="py-20 bg-card/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground">Safety Tips & Guidelines</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Essential safety tips to help you navigate online dating confidently and securely.
-            </p>
-          </div>
-
-          <Tabs defaultValue="profile" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="profile">Profile Safety</TabsTrigger>
-              <TabsTrigger value="communication">Communication</TabsTrigger>
-              <TabsTrigger value="meeting">Meeting Safety</TabsTrigger>
-            </TabsList>
-
-            {safetyTips.map((category, categoryIndex) => (
-              <TabsContent
-                key={categoryIndex}
-                value={category.category.toLowerCase().replace(" ", "")}
-                className="space-y-6"
-              >
-                <Card className="shadow-lg">
-                  <CardHeader>
-                    <CardTitle className="text-2xl text-foreground">{category.category}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {category.tips.map((tip, tipIndex) => (
-                        <div key={tipIndex} className="flex items-start space-x-3 p-4 bg-accent/20 rounded-lg">
-                          <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                          <p className="text-muted-foreground leading-relaxed">{tip}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-            ))}
-          </Tabs>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground">What Our Users Say</h2>
-            <p className="text-xl text-muted-foreground">Real feedback about our safety and security measures</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center space-x-2">
-                    <Shield className="h-5 w-5 text-primary" />
-                    <span className="text-sm font-medium text-primary">{testimonial.role}</span>
-                  </div>
-                  <p className="text-muted-foreground italic leading-relaxed">"{testimonial.content}"</p>
-                  <div className="flex items-center justify-between">
-                    <div className="font-semibold text-foreground">- {testimonial.name}</div>
-                    <div className="flex space-x-1">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <div key={i} className="w-4 h-4 bg-yellow-400 rounded-full"></div>
-                      ))}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+   <TestimonialSlider />
 
       {/* Trust & Safety Team Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
