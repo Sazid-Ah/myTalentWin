@@ -63,9 +63,9 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative z-10 animate-float">
                 <img
-                  src="/modern-dating-app-mockup.png"
+                  src="/mockup.png"
                   alt="ViraagApp Interface"
-                  className="w-full max-w-md mx-auto rounded-3xl shadow-2xl"
+                  className="w-full max-w-lg mx-auto"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-3xl transform scale-110"></div>
