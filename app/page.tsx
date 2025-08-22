@@ -175,15 +175,38 @@ export default function HomePage() {
   <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl mx-auto">
     
     {/* Image Section */}
-    <div className="flex justify-center md:justify-start">
-      <Image 
-        src="/love-stories.png" 
-        alt="love-stories" 
-        height={300} 
-        width={800} 
-        className=""
-      />
-    </div>
+    <div className="hidden sm:flex  justify-center md:justify-start relative">
+  <Image
+    src="/couple1.jpg"
+    alt="love-stories"
+    height={300}
+    width={300}
+    className="rounded-4xl mb-20 relative z-10"
+  />
+  <Image
+    src="/couple2.jpg"
+    alt="love-stories"
+    height={300}
+    width={300}
+    className="rounded-4xl mt-20 -ml-24 z-20"
+  />
+</div>
+<div className="flex sm:hidden  justify-center md:justify-start relative">
+  <Image
+    src="/couple1.jpg"
+    alt="love-stories"
+    height={300}
+    width={200}
+    className="rounded-4xl mb-20 relative z-10"
+  />
+  <Image
+    src="/couple2.jpg"
+    alt="love-stories"
+    height={300}
+    width={200}
+    className="rounded-4xl mt-20 -ml-24 z-20"
+  />
+</div>
     
     {/* Text Section */}
     <div className="space-y-4">
